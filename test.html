@@ -1,8 +1,30 @@
+<!DOCTYPE html>
 <html>
 	<head>
-		<script
-			type="application/javascript"
-			src="./xplace.deploy.js">
-		</script>
+		<title>xplace unit test</title>
+
+		<link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.3.2.css">
+
+		<script type="application/javascript" src="https://code.jquery.com/qunit/qunit-2.3.2.js"></script>
+
+		<script type="application/javascript" src="./xplace.deploy.js"></script>
 	</head>
+
+	<body>
+		<div id="qunit"></div>
+
+		<div id="qunit-fixture"></div>
+
+		<script type="application/javascript">
+			QUnit.test( "xplace unit test", function( assert ) {
+
+				assert.deepEqual( xplace( { "hello": "world" } ), { "world": "hello" }, "should be deeply equal" );
+
+				assert.deepEqual( xplace( { "name": 1 } ), { 1: "name" }, "should be deeply equal" );
+
+				assert.deepEqual( xplace( { } ), { }, "should be deeply equal" );
+				
+			} );
+		</script>
+	</body>
 </html>
