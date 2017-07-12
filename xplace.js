@@ -52,15 +52,13 @@
 	@include:
 		{
 			"empt": "empt",
-			"falzy": "falzy",
-			"protype": "protype"
+			"falzy": "falzy"
 		}
 	@end-include
 */
 
 const empt = require( "empt" );
 const falzy = require( "falzy" );
-const protype = require( "protype" );
 
 const xplace = function xplace( object ){
 	/*;
@@ -71,7 +69,7 @@ const xplace = function xplace( object ){
 		@end-meta-configuration
 	*/
 
-	if( falzy( object ) || !protype( object, OBJECT ) ){
+	if( falzy( object ) || typeof object != "object" ){
 		throw new Error( "invalid object" );
 	}
 

@@ -52,15 +52,13 @@
               	@include:
               		{
               			"empt": "empt",
-              			"falzy": "falzy",
-              			"protype": "protype"
+              			"falzy": "falzy"
               		}
               	@end-include
-              */var _keys = require("babel-runtime/core-js/object/keys");var _keys2 = _interopRequireDefault(_keys);function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+              */var _keys = require("babel-runtime/core-js/object/keys");var _keys2 = _interopRequireDefault(_keys);var _typeof2 = require("babel-runtime/helpers/typeof");var _typeof3 = _interopRequireDefault(_typeof2);function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 
 var empt = require("empt");
 var falzy = require("falzy");
-var protype = require("protype");
 
 var xplace = function xplace(object) {
 	/*;
@@ -71,7 +69,7 @@ var xplace = function xplace(object) {
                                       	@end-meta-configuration
                                       */
 
-	if (falzy(object) || !protype(object, OBJECT)) {
+	if (falzy(object) || (typeof object === "undefined" ? "undefined" : (0, _typeof3.default)(object)) != "object") {
 		throw new Error("invalid object");
 	}
 
