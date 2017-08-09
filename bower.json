@@ -1,31 +1,27 @@
 {
-  "name": "xplace",
-  "version": "0.3.0",
-  "description": "Switch key and value.",
-  "main": "xplace.deploy.js",
-  "support": "xplace.support.js",
-  "authors": [
-    "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
-    "John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
-    "Vinse Vinalon <vinsevinalon@gmail.com>"
-  ],
-  "license": "MIT",
-  "keywords": [
-    "switch",
-    "key",
-    "value",
-    "xplace"
-  ],
-  "homepage": "https://github.com/volkovasystems/xplace",
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ],
-  "dependencies": {
-    "empt": "^0.27.0",
-    "falzy": "^0.23.0"
-  }
+	"name": "xplace",
+	"version": "0.3.0",
+	"description": "Switch key and value.",
+	"main": "xplace.deploy.js",
+	"support": "xplace.support.js",
+	"authors": [
+		"Richeve S. Bebedor <richeve.bebedor@gmail.com>",
+		"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
+		"Vinse Vinalon <vinsevinalon@gmail.com>"
+	],
+	"license": "MIT",
+	"keywords": [
+		"switch",
+		"key",
+		"value",
+		"xplace"
+	],
+	"homepage": "https://github.com/volkovasystems/xplace",
+	"ignore": [
+		"**/.*",
+		"node_modules",
+		"bower_components",
+		"test",
+		"tests"
+	]
 }
