@@ -70,6 +70,30 @@ const path = require( "path" );
 
 describe( "xplace", ( ) => {
 
+	describe( "`xplace( { 'hello': 'world' } )`", ( ) => {
+		it( "should be equal to { 'world': 'hello' }", ( ) => {
+
+			assert.deepEqual( xplace( { "hello": "world" } ), { "world": "hello" } );
+
+		} );
+	} );
+
+	describe( "`xplace( { 'name': 1 } )`", ( ) => {
+		it( "should be equal to { 1: 'name' }", ( ) => {
+
+			assert.deepEqual( xplace( { "name": 1 } ), { 1: "name" } );
+
+		} );
+	} );
+
+	describe( "`xplace( { } )`", ( ) => {
+		it( "should be equal to { }", ( ) => {
+
+			assert.deepEqual( xplace( { } ), { } );
+
+		} );
+	} );
+
 } );
 
 //: @end-server
@@ -79,6 +103,29 @@ describe( "xplace", ( ) => {
 
 describe( "xplace", ( ) => {
 
+	describe( "`xplace( { 'hello': 'world' } )`", ( ) => {
+		it( "should be equal to { 'world': 'hello' }", ( ) => {
+
+			assert.deepEqual( xplace( { "hello": "world" } ), { "world": "hello" } );
+
+		} );
+	} );
+
+	describe( "`xplace( { 'name': 1 } )`", ( ) => {
+		it( "should be equal to { 1: 'name' }", ( ) => {
+
+			assert.deepEqual( xplace( { "name": 1 } ), { 1: "name" } );
+
+		} );
+	} );
+
+	describe( "`xplace( { } )`", ( ) => {
+		it( "should be equal to { }", ( ) => {
+
+			assert.deepEqual( xplace( { } ), { } );
+
+		} );
+	} );
 
 } );
 
@@ -88,6 +135,56 @@ describe( "xplace", ( ) => {
 //: @bridge:
 
 describe( "xplace", ( ) => {
+
+	let bridgeURL = `file://${ path.resolve( __dirname, "bridge.html" ) }`;
+
+	describe( "`xplace( { 'hello': 'world' } )`", ( ) => {
+		it( "should be equal to { 'world': 'hello' }", ( ) => {
+			//: @ignore:
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					return JSON.stringify( xplace( { "hello": "world" } ) );
+				}
+
+			).value;
+			//: @end-ignore
+			assert.deepEqual( JSON.parse( result ), { "world": "hello" } );
+
+		} );
+	} );
+
+	describe( "`xplace( { 'name': 1 } )`", ( ) => {
+		it( "should be equal to { 1: 'name' }", ( ) => {
+			//: @ignore:
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					return JSON.stringify( xplace( { "name": 1 } ) );
+				}
+
+			).value;
+			//: @end-ignore
+			assert.deepEqual( JSON.parse( result ), { 1: "name" } );
+
+		} );
+	} );
+
+	describe( "`xplace( { } )`", ( ) => {
+		it( "should be equal to { }", ( ) => {
+			//: @ignore:
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					return JSON.stringify( xplace( { } ) );
+				}
+
+			).value;
+			//: @end-ignore
+			assert.deepEqual( JSON.parse( result ), { } );
+
+		} );
+	} );
 
 } );
 

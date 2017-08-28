@@ -1,0 +1,148 @@
+{
+	"state": {
+		"passed": 3,
+		"failed": 0,
+		"skipped": 0
+	},
+	"start": "2017-08-28T04:21:50.855Z",
+	"end": "2017-08-28T04:22:25.933Z",
+	"capabilities": {
+		"browserName": "chrome",
+		"chromeOptions": {
+			"args": [
+				"disable-gpu",
+				"headless"
+			]
+		},
+		"proxy": null
+	},
+	"host": "127.0.0.1",
+	"port": 4444,
+	"baseUrl": "http://localhost",
+	"framework": "mocha",
+	"mochaOpts": {
+		"timeout": 10000,
+		"ui": "bdd"
+	},
+	"suites": [
+		{
+			"name": "xplace",
+			"duration": 0,
+			"start": "2017-08-28T04:22:25.525Z",
+			"tests": [],
+			"hooks": []
+		},
+		{
+			"name": "xplace",
+			"duration": 227,
+			"start": "2017-08-28T04:22:25.525Z",
+			"end": "2017-08-28T04:22:25.752Z",
+			"tests": [],
+			"hooks": [
+				{
+					"start": "2017-08-28T04:22:25.528Z",
+					"end": "2017-08-28T04:22:25.529Z",
+					"duration": 1,
+					"title": "\"before each\" hook",
+					"associatedSuite": "xplace",
+					"associatedTest": "should be equal to { 'world': 'hello' }"
+				},
+				{
+					"start": "2017-08-28T04:22:25.638Z",
+					"end": "2017-08-28T04:22:25.639Z",
+					"duration": 1,
+					"title": "\"after each\" hook",
+					"associatedSuite": "xplace",
+					"associatedTest": "should be equal to { 'world': 'hello' }"
+				},
+				{
+					"start": "2017-08-28T04:22:25.639Z",
+					"end": "2017-08-28T04:22:25.640Z",
+					"duration": 1,
+					"title": "\"before each\" hook",
+					"associatedSuite": "xplace",
+					"associatedTest": "should be equal to { 1: 'name' }"
+				},
+				{
+					"start": "2017-08-28T04:22:25.701Z",
+					"end": "2017-08-28T04:22:25.701Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "xplace",
+					"associatedTest": "should be equal to { 1: 'name' }"
+				},
+				{
+					"start": "2017-08-28T04:22:25.702Z",
+					"end": "2017-08-28T04:22:25.702Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "xplace",
+					"associatedTest": "should be equal to { }"
+				},
+				{
+					"start": "2017-08-28T04:22:25.751Z",
+					"end": "2017-08-28T04:22:25.751Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "xplace",
+					"associatedTest": "should be equal to { }"
+				},
+				{
+					"start": "2017-08-28T04:22:25.752Z",
+					"end": "2017-08-28T04:22:25.752Z",
+					"duration": 0,
+					"title": "\"after all\" hook",
+					"associatedSuite": "xplace"
+				}
+			]
+		},
+		{
+			"name": "`xplace( { 'hello': 'world' } )`",
+			"duration": 113,
+			"start": "2017-08-28T04:22:25.526Z",
+			"end": "2017-08-28T04:22:25.639Z",
+			"tests": [
+				{
+					"name": "should be equal to { 'world': 'hello' }",
+					"start": "2017-08-28T04:22:25.527Z",
+					"end": "2017-08-28T04:22:25.638Z",
+					"duration": 111,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`xplace( { 'name': 1 } )`",
+			"duration": 62,
+			"start": "2017-08-28T04:22:25.639Z",
+			"end": "2017-08-28T04:22:25.701Z",
+			"tests": [
+				{
+					"name": "should be equal to { 1: 'name' }",
+					"start": "2017-08-28T04:22:25.639Z",
+					"end": "2017-08-28T04:22:25.701Z",
+					"duration": 62,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`xplace( { } )`",
+			"duration": 50,
+			"start": "2017-08-28T04:22:25.702Z",
+			"end": "2017-08-28T04:22:25.752Z",
+			"tests": [
+				{
+					"name": "should be equal to { }",
+					"start": "2017-08-28T04:22:25.702Z",
+					"end": "2017-08-28T04:22:25.751Z",
+					"duration": 49,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		}
+	]
+}

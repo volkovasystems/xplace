@@ -66,6 +66,30 @@ const xplace = require( "./xplace.js" );
 
 describe( "xplace", ( ) => {
 
+	describe( "`xplace( { 'hello': 'world' } )`", ( ) => {
+		it( "should be equal to { 'world': 'hello' }", ( ) => {
+
+			assert.deepEqual( xplace( { "hello": "world" } ), { "world": "hello" } );
+
+		} );
+	} );
+
+	describe( "`xplace( { 'name': 1 } )`", ( ) => {
+		it( "should be equal to { 1: 'name' }", ( ) => {
+
+			assert.deepEqual( xplace( { "name": 1 } ), { 1: "name" } );
+
+		} );
+	} );
+
+	describe( "`xplace( { } )`", ( ) => {
+		it( "should be equal to { }", ( ) => {
+
+			assert.deepEqual( xplace( { } ), { } );
+
+		} );
+	} );
+
 } );
 
 //: @end-server

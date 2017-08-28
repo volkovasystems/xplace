@@ -1,16 +1,60 @@
 {
-  "stats": {
-    "suites": 0,
-    "tests": 0,
-    "passes": 0,
-    "pending": 0,
-    "failures": 0,
-    "start": "2017-08-10T11:34:10.895Z",
-    "end": "2017-08-10T11:34:10.895Z",
-    "duration": 0
-  },
-  "tests": [],
-  "pending": [],
-  "failures": [],
-  "passes": []
+	"stats": {
+		"suites": 4,
+		"tests": 3,
+		"passes": 3,
+		"pending": 0,
+		"failures": 0,
+		"start": "2017-08-28T04:21:49.527Z",
+		"end": "2017-08-28T04:21:49.534Z",
+		"duration": 7
+	},
+	"tests": [
+		{
+			"title": "should be equal to { 'world': 'hello' }",
+			"fullTitle": "xplace `xplace( { 'hello': 'world' } )` should be equal to { 'world': 'hello' }",
+			"duration": 3,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should be equal to { 1: 'name' }",
+			"fullTitle": "xplace `xplace( { 'name': 1 } )` should be equal to { 1: 'name' }",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should be equal to { }",
+			"fullTitle": "xplace `xplace( { } )` should be equal to { }",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		}
+	],
+	"pending": [],
+	"failures": [],
+	"passes": [
+		{
+			"title": "should be equal to { 'world': 'hello' }",
+			"fullTitle": "xplace `xplace( { 'hello': 'world' } )` should be equal to { 'world': 'hello' }",
+			"duration": 3,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should be equal to { 1: 'name' }",
+			"fullTitle": "xplace `xplace( { 'name': 1 } )` should be equal to { 1: 'name' }",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should be equal to { }",
+			"fullTitle": "xplace `xplace( { } )` should be equal to { }",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		}
+	]
 }
